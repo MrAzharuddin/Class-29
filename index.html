@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="accordion">       
+        <div class="item">
+             <h3>Chapter 1</h3>
+        </div>
+             <p>?</p>
+             <p>hjgfhnd</p>
+         <div class="item">
+             <h3>Chapter 2</h3>
+        </div>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ipsa ut corporis blanditiis fugiat a recusandae deserunt ratione, quia, magnam ducimus quae consectetur, repellendus minima eaque aliquam. At explicabo vel quaerat cumque saepe fuga, autem enim aspernatur voluptatibus tempore distinctio velit eos, minima facilis obcaecati sit, perferendis esse. Excepturi, esse.</p>
+         <div class="item">
+             <h3>Chapter 3</h3>
+        </div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consequatur reprehenderit harum dolorem, quos tenetur autem eum blanditiis nulla magni unde tempore! Aut doloremque nisi in voluptatem, accusantium ea repudiandae magni deserunt sit? Repellat odit adipisci ipsa qui assumenda quia nesciunt, ea esse alias fugiat neque asperiores dicta ipsam dignissimos fugit reiciendis numquam molestiae minima vel accusamus! Mollitia, eveniet neque. Quos repellendus tempore consequuntur, aperiam vero temporibus perferendis fugiat tenetur impedit aliquid, ut deserunt illo fugit aspernatur perspiciatis officiis maxime fuga, culpa ratione consectetur veritatis labore? Dolor ea quasi aliquam voluptatum laudantium. Rem id quidem sint sapiente? Magni, aspernatur quaerat!</p>
+         <div class="item">
+             <h3>Chapter 4</h3>
+        </div>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus unde quasi dolorem, quidem quaerat sequi quia nobis non aspernatur pariatur aperiam sapiente neque ipsa velit exercitationem eaque maxime eveniet magni odio recusandae amet officiis consequatur similique. Minus quod nihil nostrum labore corrupti aliquid iusto, dolorum, accusamus neque praesentium corporis doloribus ea necessitatibus sed suscipit architecto esse ad voluptatum minima. Voluptate neque totam excepturi, eos quaerat suscipit autem vero amet eaque.</p>
+         <div class="item">                      
+             <h3>Chapter 5</h3>
+        </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum qui accusantium mollitia, quia numquam ipsam sit itaque consequuntur, molestiae illum quidem nam doloremque voluptates ex maxime, modi minus aliquid commodi. Quia consequatur neque explicabo! Vero maxime reiciendis impedit architecto quasi voluptate officiis officia incidunt a, id ipsum harum, aspernatur quisquam placeat assumenda. Magni id debitis, numquam accusamus ratione, animi ex beatae, nobis voluptatem assumenda perspiciatis magnam error veniam repudiandae sunt molestias eaque aliquid! Explicabo ipsum libero assumenda quaerat voluptate est.</p>
+    </section>
+    <script>
+        (function ($) {
+    'use strict';
+    $('.item').on("click", function () {
+        $(this).next().slideToggle(100);
+        $('p').not($(this).next()).slideUp('fast');
+    });
+}(jQuery));
+    </script>
+</body>
+</html>
